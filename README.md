@@ -18,6 +18,7 @@
  - Stable Network
 
 ##### Steps: 
+- Fork this repo
 - Click on “ Deploy to Heroku “ Button 
 - Choose a name for your Web Application ( such as Rexxarbots.heroku.com )
 - in Heroku , click on “ Deply app “ 
