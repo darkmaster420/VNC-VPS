@@ -48,6 +48,7 @@ RUN set -ex; \
 	ibus-gtk3 \
 	ibus-qt4 \
 	openssh-server \
+        ffmpeg \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
@@ -90,5 +91,8 @@ RUN export UNAME=$UNAME UID=1000 GID=1000 && \
 
 RUN echo xfce4-session >~/.xsession
 RUN echo "exec /etc/X11/Xsession /usr/bin/xfce4-session" 
+
+COPY . .
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 CMD ["/app/run.sh"]
