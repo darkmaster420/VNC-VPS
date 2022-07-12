@@ -1,3 +1,2 @@
 tidal-dl
 yt-dlp
-spotdl
