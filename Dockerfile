@@ -95,4 +95,5 @@ RUN echo "exec /etc/X11/Xsession /usr/bin/xfce4-session"
 COPY requirements.txt .
 RUN pip3 install -r requirements.txt
 
+EXPOSE 6969/udp
 CMD ["/app/run.sh"]
