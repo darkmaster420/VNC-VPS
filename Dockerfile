@@ -96,4 +96,5 @@ COPY requirements.txt .
 RUN pip3 install -r requirements.txt
 
 EXPOSE 6969/udp
+EXPOSE 1935
 CMD ["/app/run.sh"]
